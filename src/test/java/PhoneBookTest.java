@@ -10,4 +10,13 @@ public class PhoneBookTest {
         final int result = phoneBook.add("Name", "89997776655");
         Assertions.assertEquals(original, result);
     }
+
+    @Test
+    public void findByNumberTest() {
+        final String original = "Name";
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Name", "89997776655");
+        final String result = phoneBook.findByNumber("89997776655");
+        Assertions.assertEquals(original, result);
+    }
 }
