@@ -19,4 +19,13 @@ public class PhoneBookTest {
         final String result = phoneBook.findByNumber("89997776655");
         Assertions.assertEquals(original, result);
     }
+
+    @Test
+    public void findByNameTest() {
+        final String original = "89997776655";
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Name", "89997776655");
+        final String result = phoneBook.findByName("Name");
+        Assertions.assertEquals(original, result);
+    }
 }
