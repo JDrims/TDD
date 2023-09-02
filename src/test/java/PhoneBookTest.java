@@ -28,4 +28,12 @@ public class PhoneBookTest {
         final String result = phoneBook.findByName("Name");
         Assertions.assertEquals(original, result);
     }
+
+    @Test
+    public void printAllNamesTest() {
+        PhoneBook phoneBook = new PhoneBook();
+        phoneBook.add("Name", "89997776655");
+        phoneBook.add("Name1", "87776665544");
+        phoneBook.printAllNames();
+    }
 }

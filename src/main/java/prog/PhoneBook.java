@@ -1,7 +1,6 @@
 package prog;
 
 import java.util.Map;
-import java.util.Set;
 import java.util.TreeMap;
 
 public class PhoneBook {
@@ -24,5 +23,9 @@ public class PhoneBook {
 
     public String findByName(String name) {
         return list.get(name);
+    }
+
+    public void printAllNames() {
+
     }
 }
